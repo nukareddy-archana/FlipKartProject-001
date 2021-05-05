@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Automation Testing]" guice-stage="DEVELOPMENT">
+  <parameter name="Url" value="https://www.flipkart.com/"/>
+  <listeners>
+    <listener class-name="com.qa.amazon.utility.testscripts.Reporting"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="FunctionalTesting(failed)">
+    <classes>
+      <class name="com.qa.flipkart.Flipkart_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.Flipkart_001 -->
+    </classes>
+  </test> <!-- FunctionalTesting(failed) -->
+</suite> <!-- Failed suite [Automation Testing] -->

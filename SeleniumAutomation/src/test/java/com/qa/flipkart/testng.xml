@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing" thread-count="5" parallel="tests">
+<listeners>
+<listener class-name="com.qa.amazon.utility.testscripts.Reporting" ></listener>
+</listeners>
+<parameter name="Url" value="https://www.flipkart.com/"></parameter>
+  <test thread-count="5" name="FunctionalTesting" parallel="classes" >
+    <classes>
+       <class name="com.qa.flipkart.Flipkart_001"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
